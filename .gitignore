@@ -1,0 +1,65 @@
+# Environment variables - NEVER commit these
+.env
+*.env
+
+# API keys
+*api_key*
+*API_KEY*
+
+# Python files - exclude all except kyc_processor.py
+*.py
+!kyc_processor.py
+
+# Python runtime files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*$py.class
+
+# Virtual environments
+myenv/
+venv/
+env/
+.venv/
+
+# Logs
+*.log
+kyc_processing.log
+
+# DIRECTORY WHITELIST APPROACH
+# Ignore ALL directories by default
+*/
+# Then explicitly allow only the directories we want
+!documents/
+
+# Explicitly exclude sensitive directories
+Identity Documents/
+outputs/
+
+# Output files
+*.json
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.pydevproject
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# Jupyter Notebooks (if any)
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
